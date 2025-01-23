@@ -3,8 +3,8 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <footer className="pb-44 pt-16 px-12 bg-sky-900">
-        <div className="flex justify-between">
+      <footer className="pt-16 px-12 bg-sky-900">
+        <div className="lg:flex lg:justify-between flex flex-col gap-10 h-full">
           <div className="flex flex-col gap-10">
             <div>
               <a
@@ -18,8 +18,7 @@ const Footer = () => {
                     Universitas Hasanuddin
                   </span>
                   <span className="block md:hidden self-center text-md font-semibold whitespace-nowrap dark:text-white text-white">
-                    Organisasi Kemahasiswaan Informatika <br /> Fakultas Teknik
-                    Universitas Hasanuddin
+                    OKIF FT-UH
                   </span>
                 </div>
               </a>
@@ -65,13 +64,13 @@ const Footer = () => {
           </div>
           <div className="flex flex-col gap-10">
             <h3 className="font-bold text-white">UNIT KEGIATAN MAHASISWA</h3>
-            <h3 className="font-semibold text-white ml-20">Coder Institute</h3>
+            <h3 className="font-semibold text-white lg:ml-20">
+              - Coder Institute
+            </h3>
           </div>
         </div>
-        <div className="flex justify-between mt-32">
-          <p className="text-white text-xs">
-            © 2023 Organisasi Kemahasiswaan Informatika FT-UH (OKIF FT-UH)
-          </p>
+        <div className="lg:flex lg:justify-between flex flex-col gap-8 pb-10 pt-10">
+            <h3 className="text-white font-bold">SOCIAL MEDIA</h3>
           <div className="flex gap-3">
             <a href="" className="text-white hover:underline">
               Instagram
@@ -83,6 +82,9 @@ const Footer = () => {
               LinkedIn
             </a>
           </div>
+          <p className="text-white text-xs">
+            © 2023 Organisasi Kemahasiswaan Informatika FT-UH (OKIF FT-UH)
+          </p>
         </div>
       </footer>
     </>
