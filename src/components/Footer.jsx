@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <>
       <footer className="pt-16 px-12 bg-sky-900">
-        <div className="lg:flex lg:justify-between flex flex-col gap-10 h-full">
+        <div className="lg:flex lg:justify-between flex gap-10 h-full">
           <div className="flex flex-col gap-10">
             <div>
               <a
@@ -70,8 +70,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="lg:flex lg:justify-between flex flex-col gap-8 pb-10 pt-10">
-            <h3 className="text-white font-bold">SOCIAL MEDIA</h3>
-          <div className="flex gap-3">
+          <h3 className="text-white font-bold">SOCIAL MEDIA</h3>
+          <div className="flex flex-col gap-3">
             <a href="" className="text-white hover:underline">
               Instagram
             </a>
@@ -82,7 +82,7 @@ const Footer = () => {
               LinkedIn
             </a>
           </div>
-          <p className="text-white text-xs">
+          <p className="text-white text-xs mt-10">
             © 2023 Organisasi Kemahasiswaan Informatika FT-UH (OKIF FT-UH)
           </p>
         </div>

@@ -12,10 +12,10 @@ const Hero = () => {
           </p>
           <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
             <a
-              href="#"
+              href="/program"
               className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
             >
-              Get started
+              Program Kerja & Jobdesc HMIF FT-UH Periode 2024/2025
               <svg
                 className="w-3.5 h-3.5 ms-2 rtl:rotate-180"
                 aria-hidden="true"
@@ -36,7 +36,7 @@ const Hero = () => {
               href="#"
               className="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400"
             >
-              Learn more
+              Jajaran Pengurus OKIF FT-UH
             </a>
           </div>
         </div>
@@ -54,17 +54,18 @@ const Hero = () => {
           </div>
           <div className="lg:flex-1 px-4">
             <h3 className="text-3xl font-bold mb-4">Mengenal OKIF FT-UH</h3>
-            <p className="break-words mb-4">
+            <p className="break-words mb-4 text-xl">
               OKIF FT-UH adalah organisasi kemahasiswaan non-struktural di
               Departemen Teknik Informatika intra Universitas Hasanuddin yang
               berstatus otonom dan secara struktural merupakan bagian dari
               OKFT-UH yang mengacu pada bagan struktur OKFT-UH.
             </p>
-            <p className="break-words">
-              OKIF FT-UH adalah organisasi kemahasiswaan non-struktural di
-              Departemen Teknik Informatika intra Universitas Hasanuddin yang
-              berstatus otonom dan secara struktural merupakan bagian dari
-              OKFT-UH yang mengacu pada bagan struktur OKFT-UH.
+            <p className="break-words text-xl">
+              OKIF FT-UH bertujuan sebagai sarana peningkatan kualitas ketakwaan
+              kepada Tuhan Yang Maha Esa, yang berasaskan nilai-nilai luhur
+              pancasila demi terwujudnya cita-cita bangsa dengan mengembangkan
+              wawasan, integritas dan potensi diri, kemampuan keprofesian, serta
+              pengabdian kepada masyarakat.
             </p>
           </div>
         </div>

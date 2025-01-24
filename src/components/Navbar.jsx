@@ -70,35 +70,24 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="/Tentang"
+                href="/struktur"
                 className={`block py-2 px-3 rounded md:bg-transparent md:p-0 ${isActive(
-                  "/Tentang"
+                  "/struktur"
                 )}`}
-                aria-current={pathname === "/Tentang" ? "page" : undefined}
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href="/services"
-                className={`block py-2 px-3 rounded md:bg-transparent md:p-0 ${isActive(
-                  "/services"
-                )}`}
-                aria-current={pathname === "/services" ? "page" : undefined}
-              >
-                Program Kerja 24/25
-              </a>
-            </li>
-            <li>
-              <a
-                href="/services"
-                className={`block py-2 px-3 rounded md:bg-transparent md:p-0 ${isActive(
-                  "/services"
-                )}`}
-                aria-current={pathname === "/services" ? "page" : undefined}
+                aria-current={pathname === "/program" ? "page" : undefined}
               >
                 Struktur Organisasi
+              </a>
+            </li>
+            <li>
+              <a
+                href="/program"
+                className={`block py-2 px-3 rounded md:bg-transparent md:p-0 ${isActive(
+                  "/program"
+                )}`}
+                aria-current={pathname === "/program" ? "page" : undefined}
+              >
+                Program Kerja 24/25
               </a>
             </li>
           </ul>
