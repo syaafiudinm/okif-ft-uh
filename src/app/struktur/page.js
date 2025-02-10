@@ -15,7 +15,7 @@ export default function Tentang() {
       const { data, error } = await supabase.from("users").select("*");
 
       if (error) {
-        setError(error.message);
+        setError(error.message); 
       } else {
         setUsers(data);
       }
