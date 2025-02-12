@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "@/components/Navbar";
 import { supabase } from "@/lib/supabaseClient";
 import Image from "next/image";
+import Footer from "@/components/Footer";
 
 export default function Tentang() {
   // const [loading, setLoading] = useState(true);
@@ -33,7 +34,7 @@ export default function Tentang() {
   return (
     <>
       <Navbar />
-      <div className="mt-32 px-4 md:px-10 lg:px-32 min-h-screen">
+      <div className="mt-32 px-4 md:px-10 lg:px-32 min-h-[50vh] md:min-h-screen">
         <h1 className="font-bold text-lg md:text-2xl lg:text-4xl mb-4 md:mb-10 text-center">
           Struktur Organisasi OKIF FT-UH Periode 2024/2025
         </h1>
@@ -46,6 +47,7 @@ export default function Tentang() {
           style={{ width: "100%", height: "auto" }}
         ></Image>
       </div>
+      <Footer />
 
       {/* <div className="mt-32">Ini Halaman Tentang</div>
       <div>
