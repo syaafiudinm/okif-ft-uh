@@ -10,7 +10,7 @@ const Hero = () => {
             kenal lebih jauh dengan Organisasi Kemahasiswaan Informatika
             Fakultas Teknik Universitas Hasanuddin!
           </p>
-          <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+          <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:mx-10">
             <a
               href="/program"
               className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
