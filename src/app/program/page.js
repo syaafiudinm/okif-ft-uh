@@ -9,7 +9,7 @@ export default function Program() {
     <>
       <Navbar />
       <Vm />
-      <div className="py-10 px-12 mb-10 md:mb-20">
+      <div className="py-10 px-12 mb-10 md:mb-20 md:mt-10">
         <Proker />
       </div>
       <Footer/>

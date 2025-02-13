@@ -29,7 +29,7 @@ const Proker = () => {
     return (
       <div
         role="status"
-        className="flex justify-center items-center min-h-[50vh]"
+        className="flex justify-center items-center min-h-[60vh]"
       >
         <svg
           aria-hidden="true"
