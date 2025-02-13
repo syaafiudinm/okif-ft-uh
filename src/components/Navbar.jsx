@@ -17,10 +17,10 @@ const Navbar = () => {
       : "text-gray-900 dark:text-white";
 
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900 px-10 fixed top-0 z-50 w-full">
+    <nav className="bg-white border-gray-200 dark:bg-gray-900 px-4 md:px-10 fixed top-0 z-50 w-full">
       <div className="flex flex-wrap items-center justify-between p-4">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="Okif.svg" className="h-16" alt="OKIF FT-UH Logo" />
+          <img src="Okif.svg" className="h-14 md:h-16" alt="OKIF FT-UH Logo" />
           <div className="pb-1">
             <span className="hidden lg:block self-center text-sm font-bold whitespace-nowrap dark:text-white text-sky-600">
               Organisasi Kemahasiswaan Informatika <br /> Fakultas Teknik
