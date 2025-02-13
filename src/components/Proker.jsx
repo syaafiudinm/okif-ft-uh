@@ -14,7 +14,7 @@ const Proker = () => {
     const fetchProgram = async () => {
       setLoading(true);
       const { data, error } = await supabase.from("program").select("*");
-      console.log("Fetched data:", data);
+      // console.log("Fetched data:", data);
       if (error) {
         setError(error.message);
       } else {
