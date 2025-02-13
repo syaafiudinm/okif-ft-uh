@@ -1,6 +1,21 @@
 "use client";
 
+import { useEffect } from "react";
+
 export const ProkerModal = ({ data, onClose }) => {
+  const disableScroll = () => {
+    document.body.style.overflow = "hidden";
+  };
+
+  const enableScroll = () => {
+    document.body.style.overflow = "auto";
+  };
+
+  useEffect(() => {
+    disableScroll();
+    return () => enableScroll();
+  }, []);
+
   const workshopData = [
     {
       label: "Nama",
