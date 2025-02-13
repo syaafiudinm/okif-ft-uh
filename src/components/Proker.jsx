@@ -27,7 +27,10 @@ const Proker = () => {
 
   if (loading)
     return (
-      <div role="status">
+      <div
+        role="status"
+        className="flex justify-center items-center min-h-[50vh]"
+      >
         <svg
           aria-hidden="true"
           className="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
@@ -47,6 +50,7 @@ const Proker = () => {
         <span className="sr-only">Loading...</span>
       </div>
     );
+
   if (error) return <div>Error: {error}</div>;
   return (
     <>
