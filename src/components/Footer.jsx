@@ -78,7 +78,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <p className="text-white text-xs bg-sky-900 text-center py-2">
+      <p className="text-white text-xs bg-sky-900 text-center px-10 py-2 pb-6">
         © 2023 Organisasi Kemahasiswaan Informatika FT-UH (OKIF FT-UH)
       </p>
     </>
