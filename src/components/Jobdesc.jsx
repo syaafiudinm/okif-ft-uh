@@ -7,7 +7,7 @@ const Jobdesc = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 5; // Jumlah data per halaman
+  const itemsPerPage = 5;
 
   const [totalItems, setTotalItems] = useState(0);
 
@@ -16,15 +16,13 @@ const Jobdesc = () => {
       setLoading(true);
       setError(null);
 
-      // Hitung batas data berdasarkan halaman
       const from = (currentPage - 1) * itemsPerPage;
       const to = from + itemsPerPage - 1;
 
-      // Fetch data dari Supabase dengan pagination
       const { data, error } = await supabase
         .from("jobdesc")
         .select("*")
-        .order("id", { ascending: true }) // Urutkan berdasarkan ID
+        .order("id", { ascending: true })
         .range(from, to);
 
       if (error) {
@@ -38,7 +36,6 @@ const Jobdesc = () => {
     fetchJobdesc();
   }, [currentPage]);
 
-  // Fetch total jumlah data untuk pagination
   useEffect(() => {
     const fetchTotalItems = async () => {
       const { count } = await supabase
@@ -60,26 +57,26 @@ const Jobdesc = () => {
   if (error)
     return <div className="text-red-500 text-center">Error: {error}</div>;
 
-  // Hitung jumlah total halaman
   const totalPages = Math.ceil(totalItems / itemsPerPage);
 
-  // Hitung nomor item yang sedang ditampilkan
   const startItem = (currentPage - 1) * itemsPerPage + 1;
   const endItem = Math.min(currentPage * itemsPerPage, totalItems);
 
   return (
     <div className="mx-10 my-10">
-      <div className="relative overflow-x-auto shadow-lg outline outline-1 outline-slate-400 sm:rounded-lg">
+      <div className="relative overflow-x-auto shadow-lg outline outline-1 outline-slate-400 sm:rounded-lg rounded-lg">
         <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
           <thead className="text-xs text-gray-800 uppercase dark:text-gray-400">
             <tr>
               <th className="text-xl px-6 py-3 bg-gray-50 dark:bg-gray-800">
                 Deskripsi Kerja
               </th>
-              <th className="text-xl px-6 py-3 bg-gray-50 dark:bg-gray-800">
+              <th className="text-xl px-6 py-3 dark:bg-gray-800">
                 Penanggung Jawab
               </th>
-              <th className="text-xl px-6 py-3">Kompartemen</th>
+              <th className="text-xl px-6 py-3 bg-gray-50 dark:bg-gray-800">
+                Kompartemen
+              </th>
             </tr>
           </thead>
           <tbody>

@@ -90,6 +90,17 @@ const Navbar = () => {
                 Program Kerja 24/25
               </a>
             </li>
+            <li>
+              <a
+                href="/blog"
+                className={`block py-2 px-3 rounded lg:bg-transparent lg:p-0 ${isActive(
+                  "/blog"
+                )}`}
+                aria-current={pathname === "/blog" ? "page" : undefined}
+              >
+                Blog
+              </a>
+            </li>
           </ul>
         </div>
       </div>

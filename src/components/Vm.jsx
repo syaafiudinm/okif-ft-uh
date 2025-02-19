@@ -54,7 +54,7 @@ const Vm = () => {
   if (error) return <div>Error: {error}</div>;
   return (
     <>
-      <div className="flex flex-wrap w-full justify-center mt-28">
+      <div className="flex flex-wrap w-full justify-center mt-28 px-10">
         {ketua.map((ketua) => (
           <div key={ketua.id}>
             <a
@@ -64,7 +64,6 @@ const Vm = () => {
               <img
                 className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
                 src={imageUrl}
-                height={500}
                 alt="profile picture"
               />
               <div className="flex flex-col justify-between p-4 leading-normal">

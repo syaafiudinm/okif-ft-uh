@@ -54,13 +54,13 @@ const Hero = () => {
           </div>
           <div className="lg:flex-1 px-4">
             <h3 className="text-3xl font-bold mb-4">Mengenal OKIF FT-UH</h3>
-            <p className="break-words mb-4 text-xl">
+            <p className="break-words mb-4 text-xl max-sm:text-lg">
               OKIF FT-UH adalah organisasi kemahasiswaan non-struktural di
               Departemen Teknik Informatika intra Universitas Hasanuddin yang
               berstatus otonom dan secara struktural merupakan bagian dari
               OKFT-UH yang mengacu pada bagan struktur OKFT-UH.
             </p>
-            <p className="break-words text-xl">
+            <p className="break-words text-xl max-sm:text-lg">
               OKIF FT-UH bertujuan sebagai sarana peningkatan kualitas ketakwaan
               kepada Tuhan Yang Maha Esa, yang berasaskan nilai-nilai luhur
               pancasila demi terwujudnya cita-cita bangsa dengan mengembangkan
