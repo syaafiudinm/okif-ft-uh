@@ -2,12 +2,10 @@ import { NextResponse } from "next/server";
 import { supabase } from "./lib/supabaseClient";
 
 export async function middleware(req) {
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  const { data } = await supabase.auth.getSession();
 
-  if (!user) {
-    return NextResponse.redirect(new URL("/login", req.url));
+  if (!data?.session) {
+    return NextResponse.redirect(new URL("/login", req.url)); // Redirect ke login jika tidak ada sesi
   }
 
   return NextResponse.next();
