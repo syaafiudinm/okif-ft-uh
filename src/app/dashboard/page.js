@@ -2,8 +2,11 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { supabase } from "@/lib/supabaseClient";
+import Sidebar from "@/components/Sidebar";
+import Link from "next/link";
+import { initFlowbite } from "flowbite";
 
-const Dashboard = () => {
+export default function Dashboard() {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const router = useRouter();
@@ -22,6 +25,10 @@ const Dashboard = () => {
     checkAuth();
   }, [router]);
 
+  useEffect(() => {
+    initFlowbite();
+  });
+
   if (loading)
     return (
       <div className="flex justify-center items-center h-screen">
@@ -39,17 +46,30 @@ const Dashboard = () => {
   };
 
   return (
-    <div>
-      <h1 className="text-3xl font-bold">Dashboard Admin</h1>
-      <p>Selamat datang, {user?.email}</p>
-      <button
-        onClick={handleLogout}
-        className="bg-red-600 rounded-lg hover:bg-red-700 text-white px-3 py-2"
-      >
-        Logout
-      </button>
-    </div>
+    <Sidebar
+      content={
+        <>
+          <div>
+            <h1 className="text-3xl font-bold">Dashboard Admin</h1>
+            <p>Selamat datang, {user?.email}</p>
+            <button
+              onClick={handleLogout}
+              className="bg-red-600 rounded-lg hover:bg-red-700 text-white px-3 py-2"
+            >
+              Logout
+            </button>
+            <div className="mt-12 mx-4">
+              <h1 className="mb-5">OKIF Terkini</h1>
+              <Link
+                href="blog/new"
+                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              >
+                add new blog
+              </Link>
+            </div>
+          </div>
+        </>
+      }
+    />
   );
-};
-
-export default Dashboard;
+}
