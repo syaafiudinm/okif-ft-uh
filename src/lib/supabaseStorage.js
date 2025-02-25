@@ -13,3 +13,6 @@ export async function uploadImage(image) {
 
   return `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/blog-images/${data.path}`;
 }
+export function getImageUrl(bucket, filename) {
+  return `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/${bucket}/${filename}`;
+}
