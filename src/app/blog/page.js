@@ -58,8 +58,8 @@ export default function Blog() {
   return (
     <>
       <Navbar />
-      <div className="mt-32 mx-4">
-        <h1>OKIF Terkini</h1>
+      <div className="mt-32 mx-4 mb-10">
+        <h1 className="font-bold text-lg md:text-2xl lg:text-4xl mb-4 md:mb-10 text-center">OKIF Terkini</h1>
         <div className="flex flex-wrap gap-4 justify-center">
           {blog.map((blog) => (
             <div

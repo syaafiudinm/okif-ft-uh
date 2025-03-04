@@ -36,15 +36,6 @@ export default function Dashboard() {
       </div>
     );
 
-  const handleLogout = async () => {
-    const { error } = await supabase.auth.signOut();
-    if (error) {
-      console.error("logout gagal:", error.message);
-    } else {
-      router.push("/login");
-    }
-  };
-
   return (
     <Sidebar
       content={
@@ -52,12 +43,6 @@ export default function Dashboard() {
           <div>
             <h1 className="text-3xl font-bold">Dashboard Admin</h1>
             <p>Selamat datang, {user?.email}</p>
-            <button
-              onClick={handleLogout}
-              className="bg-red-600 rounded-lg hover:bg-red-700 text-white px-3 py-2"
-            >
-              Logout
-            </button>
             <div className="mt-12 mx-4">
               <h1 className="mb-5">OKIF Terkini</h1>
               <Link
